@@ -7,44 +7,132 @@
   --lightGrey: #AAB8C2;
   --lighterGrey: #E1E8ED;
   --lightestGrey: #F5F8FA;
+  --warn: #d32406;
 }
 
 .App {
   text-align: center;
   font-family: 'Nunito', sans-serif;
+  background-color: var(--lightGrey);
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.data-section{
+  background-color: var(--lighterGrey);
+  max-width: 75%;
+  margin: auto;
+  border: 2px solid var(--black);
+  border-radius: 1rem;
+  box-shadow: 5px 5px 15px var(--darkGrey), -5px -5px 15px var(--darkGrey);
+  padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.txt-tweet{
+  resize: none;
+  width: 80%;
+  height: 100px;
+  font-family: inherit;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  background-color: var(--lightestGrey);
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.txt-tweet::-webkit-scrollbar {
+  width: 0.7rem;
+}
+ 
+.txt-tweet::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px rgba(245, 248, 250, 0.4);
+  -webkit-border-radius: 2rem;
+  border-radius: 2rem;
+}
+ 
+.txt-tweet::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  outline: none;
+  cursor: grab;
+  border-radius: 1rem; 
 }
 
-.App-link {
-  color: #61dafb;
+.txt-tweet::-webkit-scrollbar-thumb:hover {
+  background: rgba(101, 119, 134, 0.7);
+  cursor: grab;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-tag{
+  outline: none;
+  padding: 0.5rem;
+  border-radius: 0.8rem;
+  background-color: var(--blue);
+  color: var(--black);
+  font-weight: bold;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-tweet{
+  font-size: larger;
+  border: 2px solid var(--lighterGrey);
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  cursor: pointer;
+  background-color: var(--darkGrey);
+  font-weight: bolder;
+}
+
+img{
+  height: 25px;
+  padding: 0.2rem;
+  border-radius: 50%;
+  margin-bottom: -7px;
+}
+
+.btn-tweet:hover{
+  background-color: var(--lightGrey);
+  border: 2px solid var(--darkGrey);
+}
+
+.btn-tweet:hover img{
+  background-color: var(--lighterGrey);
+}
+
+.txt-output{
+  font-family: inherit;
+  width: 100;
+  word-wrap: break-word;
+  overflow: auto;
+}
+
+.limit-tweet{
+  margin: auto;
+  max-width: 10%;
+  padding: 0.5rem 0.4rem;
+  border-radius: 50%;
+  border: 1px solid var(--black);
+  color: var(--blue);
+  background-color: var(--lightestGrey);
+}
+
+
+.txt-output::-webkit-scrollbar {
+  height: 0.5rem;
+}
+ 
+.txt-output::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 10px rgba(245, 248, 250, 0.4);
+  -webkit-border-radius: 2rem;
+  border-radius: 2rem;
+}
+ 
+.txt-output::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  outline: none;
+  cursor: grab;
+  border-radius: 1rem; 
+}
+
+.txt-output::-webkit-scrollbar-thumb:hover {
+  background: rgba(101, 119, 134, 0.7);
+  cursor: grab;
 }
