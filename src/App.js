@@ -9,7 +9,6 @@ let diffInDays = Math.ceil((todayDate.getTime() - startDate.getTime()) / (1000 *
 function App() {
   const [tweetMessage, tweetMsgHandler] = useState(`Day ${diffInDays} of #151daysofcode \n #neogcamp`);
   const [tweetSize, tweetSizeHandler] = useState(36);
-  // let msgTweet = `Day ${diffInDays} of #151daysofcode \n`;
 
   const msgHandler = (event) => {
     let msgTweet = `Day ${diffInDays} of #151daysofcode \n`;
