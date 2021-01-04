@@ -7,28 +7,27 @@ let todayDate = new Date();
 let diffInDays = Math.ceil((todayDate.getTime() - startDate.getTime()) / (1000 * 3600 * 24));
 let maxTweetLen = 280;
 function App() {
-  const [tweetMessage, tweetMsgHandler] = useState(`Day ${diffInDays} of #151daysofcode \n #neogcamp`);
+  const [tweetMessage, tweetMsgHandler] = useState(`Day ${diffInDays} of #151daysofcode`);
+  const [tweetTag, tweetTagHandler] = useState('\n#neogcamp');
   const [tweetSize, tweetSizeHandler] = useState(36);
 
-  const constFlow = (msgVal) =>{
-    // maxTweetLen = 280 - msgVal.length; // sort this logic
-    // after hashtags are choosen, we cannot type anymore - it refreshes the tweet
-    console.log(maxTweetLen);
-    tweetSizeHandler(msgVal.length);
-    tweetMsgHandler(msgVal);
-  }
 
   const msgHandler = (event) => {
     let msgTweet = `Day ${diffInDays} of #151daysofcode \n`;
     msgTweet += `${event.target.value}`;
-    msgTweet += '\n#neogcamp';
-    constFlow(msgTweet);
+    // msgTweet += '\n#neogcamp';
+    tweetSizeHandler(msgTweet.length);
+    tweetMsgHandler(msgTweet);
   }
 
   const tagHandler = (event) => {
-    let msgTweet = tweetMessage;
-    msgTweet += ` ${event.target.innerText}`;
-    constFlow(msgTweet);
+    // let msgTweet = tweetMessage;
+    let msgTag = tweetTag;
+    if(!msgTag.includes(event.target.innerText)){
+      msgTag += ` ${event.target.innerText}`;
+    }
+    tweetSizeHandler(msgTag.length);
+    tweetTagHandler(msgTag);
   }
   
   const tweetHandler = () => {
@@ -54,7 +53,8 @@ function App() {
       <br/><br/>
       <div className="data-section">
       <h3>⬇ Preview of your tweet ⬇</h3>
-      <pre className="txt-output">{tweetMessage}</pre>
+      <pre className="txt-output">{tweetMessage}
+      {tweetTag}</pre>
       <h4 className="limit-tweet">{tweetSize}/280</h4>
       </div>
       <br/>
