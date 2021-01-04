@@ -150,7 +150,7 @@ img{
 }
 
 footer{
-  max-width: 60%;
+  max-width: 70%;
   margin: 2rem auto;
   padding: 1rem;
   background-color: var(--darkGrey);
@@ -168,6 +168,16 @@ footer a:hover{
   text-decoration: underline;
   /* border: 1px solid var(--black); */
   color: var(--black);
+}
+
+.social-media{
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 0.2rem 0.1rem;
+}
+
+.social-media:hover{
+  border: 1px solid var(--lightestGrey);
 }
 
 @media only screen and (max-width:600px){

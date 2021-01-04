@@ -55,36 +55,46 @@ function App() {
       <h2>Tweet your daily progress of #151daysofcode challenge</h2>
       <div className="data-section">
         {/* <div>
-      Start date: <input type='date' value="2021-01-01" onChange={startDateHandler} min="2021-01-01" max={maxDate}></input>
-      </div> */}
-      <br/>
-      <textarea className="txt-tweet" placeholder="Enter the tweet message here" onChange={msgHandler}></textarea>
-      <br/>
-      <div className='btn-section'>
-      <button className="btn-tag" type="button" onClick={tagHandler}>#webdev</button>
-      <button className="btn-tag" type="button" onClick={tagHandler}>#JavaScript</button>
-      <button className="btn-tag" type="button" onClick={tagHandler}>#ReactJS</button>
-      <button className="btn-tag" type="button" onClick={tagHandler}>#codingisfun</button>
-      <button className="btn-tag" type="button" onClick={tagHandler}>#100daysofcode</button>
-      <button className="btn-tag" type="button" onClick={tagHandler}>#dailycoding</button>
-      <button className="btn-tag" type="button" onClick={tagHandler}>#teamtanay</button>
-      </div>
-      <br/>
-      <span className="btn-tweet" onClick={tweetHandler}>Tweet <img src="twitter.svg" alt="Tweet"/></span>
-      <br/><br/>
-      <div className="data-section">
-      <h3>⬇ Preview of your tweet ⬇</h3>
-      <pre className="txt-output">{tweetMessage}</pre>
-      <p>{tweetTag}</p>
-      <h4 className="limit-tweet">{tweetSize}/280</h4>
-      </div>
-      <br/>
+        Start date: <input type='date' value="2021-01-01" onChange={startDateHandler} min="2021-01-01" max={maxDate}></input>
+        </div> */}
+        <br/>
+        <textarea className="txt-tweet" placeholder="Enter the tweet message here" onChange={msgHandler}></textarea>
+        <br/>
+          <div className='btn-section'>
+            <button className="btn-tag" type="button" onClick={tagHandler}>#webdev</button>
+            <button className="btn-tag" type="button" onClick={tagHandler}>#JavaScript</button>
+            <button className="btn-tag" type="button" onClick={tagHandler}>#ReactJS</button>
+            <button className="btn-tag" type="button" onClick={tagHandler}>#codingisfun</button>
+            <button className="btn-tag" type="button" onClick={tagHandler}>#100daysofcode</button>
+            <button className="btn-tag" type="button" onClick={tagHandler}>#dailycoding</button>
+            <button className="btn-tag" type="button" onClick={tagHandler}>#teamtanay</button>
+          </div>
+          <br/>
+          <div className="data-section">
+          <h3>⬇ Preview of your tweet ⬇</h3>
+          <pre className="txt-output">{tweetMessage}</pre>
+          <p>{tweetTag}</p>
+          <h4 className="limit-tweet">{tweetSize}/280</h4>
+        </div>      
+        <br/>
+        <span className="btn-tweet" onClick={tweetHandler}>Tweet <img src="twitter.svg" alt="Tweet"/></span>
+        <br/>
       </div>
       <footer>
-      <p>This app currently tracks the calendar day number starting from 1st Jan 2021. Safely assuming that I would not take break days, 1st June 2021 would be 151 days from then.</p>
-      <p>Visit <a href="https://151daysofcode.netlify.app/" target="_blank" rel="noreferrer">#151daysofcode</a> to understand all about this challenge and get started!</p>
-      <small><u>Further enhancements</u>: Adding the functionality of custom start date.</small>
-    </footer>
+        <p>This app currently tracks the calendar day number starting from 1st Jan 2021. Safely assuming that I would not take break days, 1st June 2021 would be 151 days from then.</p>
+        <p>Visit <a href="https://151daysofcode.netlify.app/" target="_blank" rel="noreferrer">#151daysofcode</a> to understand all about this challenge and get started!
+        <br/><small><u>Further enhancements</u>: Adding the functionality of custom start date.</small></p>
+        <p>
+        <span>
+            <a href="https://supminn-neog.netlify.app/" target="_blank"><img class="social-media" src="user.svg"
+                    width="30" alt="Portfolio"></img></a>
+            <a href="https://github.com/supminn/" target="_blank"><img class="social-media" src="github.svg"
+                    width="30" alt="Github"></img></a>
+            <a href="https://twitter.com/supminn" target="_blank"><img class="social-media" src="twitter.svg"
+                    width="30" alt="Twitter"></img></a>
+        </span>
+        &nbsp;Copyright © 2020 SupTECH </p>
+      </footer>
     </div>
   );
 }
