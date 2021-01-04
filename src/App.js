@@ -31,7 +31,6 @@ function App() {
   const msgHandler = (event) => {
     let msgTweet = `Day ${diffInDays} of #151daysofcode \n`;
     msgTweet += `${event.target.value}`;
-    // msgTweet += '\n#neogcamp';
     tweetSizeHandler(msgTweet.length);
     tweetMsgHandler(msgTweet);
   }
@@ -46,7 +45,7 @@ function App() {
   }
   
   const tweetHandler = () => {
-    let finalMessage = encodeURIComponent(tweetMessage);
+    let finalMessage = encodeURIComponent(tweetMessage+tweetTag);
     let twitterUrl = `https://twitter.com/intent/tweet?text=${finalMessage}`;
     window.open(twitterUrl, "_blank");
   }
