@@ -10,11 +10,20 @@
   --warn: #d32406;
 }
 
-.App {
+body {
   text-align: center;
   font-family: 'Nunito', sans-serif;
   background-color: var(--lightGrey);
-  height: 100vh;
+  height: 100%;
+}
+
+h2{
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+
+p{
+  margin-block-start: 0;
 }
 
 .data-section{
@@ -99,14 +108,13 @@ img{
 
 .txt-output{
   font-family: inherit;
-  width: 100;
-  word-wrap: break-word;
   overflow: auto;
+  margin-block-end: 0;
 }
 
 .limit-tweet{
   margin: auto;
-  max-width: 10%;
+  max-width: 8vw;
   padding: 0.5rem 0.4rem;
   border-radius: 50%;
   border: 1px solid var(--black);
@@ -114,7 +122,11 @@ img{
   background-color: var(--lightestGrey);
 }
 
-
+.btn-section{
+  /* border: 1px solid black; */
+  max-width: 85%;
+  margin: auto;
+}
 .txt-output::-webkit-scrollbar {
   height: 0.5rem;
 }
@@ -135,4 +147,18 @@ img{
 .txt-output::-webkit-scrollbar-thumb:hover {
   background: rgba(101, 119, 134, 0.7);
   cursor: grab;
+}
+
+footer{
+  max-width: 60%;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: var(--darkGrey);
+  color: var(--lightestGrey);
+}
+
+@media only screen and (max-width:600px){
+  .limit-tweet{
+    max-width: 15vw;
+  }
 }
