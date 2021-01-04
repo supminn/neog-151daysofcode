@@ -86,11 +86,11 @@ function App() {
         <br/><small><u>Further enhancements</u>: Adding the functionality of custom start date.</small></p>
         <p>
         <span>
-            <a href="https://supminn-neog.netlify.app/" target="_blank"><img class="social-media" src="user.svg"
+            <a href="https://supminn-neog.netlify.app/" target="_blank" rel="noreferrer"><img class="social-media" src="user.svg"
                     width="30" alt="Portfolio"></img></a>
-            <a href="https://github.com/supminn/" target="_blank"><img class="social-media" src="github.svg"
+            <a href="https://github.com/supminn/" target="_blank" rel="noreferrer"><img class="social-media" src="github.svg"
                     width="30" alt="Github"></img></a>
-            <a href="https://twitter.com/supminn" target="_blank"><img class="social-media" src="twitter.svg"
+            <a href="https://twitter.com/supminn" target="_blank" rel="noreferrer"><img class="social-media" src="twitter.svg"
                     width="30" alt="Twitter"></img></a>
         </span>
         &nbsp;Copyright © 2020 SupTECH </p>
