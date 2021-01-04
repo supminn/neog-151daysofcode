@@ -7,7 +7,7 @@
   --lightGrey: #AAB8C2;
   --lighterGrey: #E1E8ED;
   --lightestGrey: #F5F8FA;
-  --warn: #d32406;
+  /* --warn: #d32406; */
 }
 
 body {
@@ -155,6 +155,19 @@ footer{
   padding: 1rem;
   background-color: var(--darkGrey);
   color: var(--lightestGrey);
+}
+
+footer a{
+  color: var(--lighterGrey);
+  text-decoration: none;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+  /* border: 1px dashed var(--black); */
+}
+footer a:hover{
+  text-decoration: underline;
+  /* border: 1px solid var(--black); */
+  color: var(--black);
 }
 
 @media only screen and (max-width:600px){
