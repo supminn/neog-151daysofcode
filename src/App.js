@@ -17,9 +17,9 @@ let diffInDays = Math.ceil((todayDate.getTime() - startDate.getTime()) / (1000 *
 // let maxDate = todayDate.getFullYear()+'-'+mm+'-'+dd;
 
 function App() {
-  const [tweetMessage, tweetMsgHandler] = useState(`Day ${diffInDays} of #151daysofcode \n`);
+  const [tweetMessage, tweetMsgHandler] = useState(`Day ${diffInDays} of #151daysofcode\n`);
   const [tweetTag, tweetTagHandler] = useState('\n#neogcamp');
-  const [tweetSize, tweetSizeHandler] = useState(25);
+  const [tweetSize, tweetSizeHandler] = useState(35);
 
   // const startDateHandler = (event) =>{
   //   console.log(event.target.value);
@@ -31,8 +31,8 @@ function App() {
   const msgHandler = (event) => {
     let msgTweet = `Day ${diffInDays} of #151daysofcode \n`;
     msgTweet += `${event.target.value}`;
-    tweetSizeHandler(msgTweet.length);
     tweetMsgHandler(msgTweet);
+    tweetSizeHandler(msgTweet.length+tweetTag.length);
   }
 
   const tagHandler = (event) => {
@@ -40,8 +40,8 @@ function App() {
     if(!msgTag.includes(event.target.innerText)){
       msgTag += ` ${event.target.innerText}`;
     }
-    tweetSizeHandler(msgTag.length);
     tweetTagHandler(msgTag);
+    tweetSizeHandler(tweetMessage.length+msgTag.length);
   }
   
   const tweetHandler = () => {
@@ -86,11 +86,11 @@ function App() {
         <br/><small><u>Further enhancements</u>: Adding the functionality of custom start date.</small></p>
         <p>
         <span>
-            <a href="https://supminn-neog.netlify.app/" target="_blank" rel="noreferrer"><img class="social-media" src="user.svg"
+            <a href="https://supminn-neog.netlify.app/" target="_blank" rel="noreferrer"><img className="social-media" src="user.svg"
                     width="30" alt="Portfolio"></img></a>
-            <a href="https://github.com/supminn/" target="_blank" rel="noreferrer"><img class="social-media" src="github.svg"
+            <a href="https://github.com/supminn/" target="_blank" rel="noreferrer"><img className="social-media" src="github.svg"
                     width="30" alt="Github"></img></a>
-            <a href="https://twitter.com/supminn" target="_blank" rel="noreferrer"><img class="social-media" src="twitter.svg"
+            <a href="https://twitter.com/supminn" target="_blank" rel="noreferrer"><img className="social-media" src="twitter.svg"
                     width="30" alt="Twitter"></img></a>
         </span>
         &nbsp;Copyright © 2020 SupTECH </p>
