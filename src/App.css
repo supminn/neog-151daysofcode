@@ -177,7 +177,7 @@ footer a:hover{
 }
 
 .social-media:hover{
-  border: 1px solid var(--lightestGrey);
+  border: 1px solid var(--lighterGrey);
 }
 
 .inpt-startDate{
