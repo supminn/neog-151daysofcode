@@ -71,6 +71,8 @@ function App() {
             <button className="btn-tag" type="button" onClick={tagHandler}>#100daysofcode</button>
             <button className="btn-tag" type="button" onClick={tagHandler}>#dailycoding</button>
             <button className="btn-tag" type="button" onClick={tagHandler}>#teamtanay</button>
+            <button className="btn-tag" type="button" onClick={tagHandler}>#CSS</button>
+            <button className="btn-tag" type="button" onClick={tagHandler}>#webdesign</button>
           </div>
           <br/>
           <div className="data-section">
