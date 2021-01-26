@@ -7,7 +7,7 @@
   --lightGrey: #AAB8C2;
   --lighterGrey: #E1E8ED;
   --lightestGrey: #F5F8FA;
-  /* --warn: #d32406; */
+  --warn: #d32406;
 }
 
 body {
@@ -120,6 +120,16 @@ img{
   border: 1px solid var(--black);
   color: var(--blue);
   background-color: var(--lightestGrey);
+}
+
+.limit-exceed{
+  margin: auto;
+  max-width: 8vw;
+  padding: 0.5rem 0.4rem;
+  border-radius: 50%;
+  border: 1px solid var(--warn);
+  color: var(--warn);
+  background-color:rgba(200,0,0,0.1);
 }
 
 .btn-section{

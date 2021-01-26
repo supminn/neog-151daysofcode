@@ -9,10 +9,10 @@ import './App.css';
   var dd = todayDate.getDate();
   var mm = todayDate.getMonth()+1;
   if(dd<10){
-          dd='0'+dd
+          dd='0'+dd;
   } 
   if(mm<10){
-      mm='0'+mm
+      mm='0'+mm;
   } 
   let maxDate = todayDate.getFullYear()+'-'+mm+'-'+dd;
 
@@ -79,7 +79,7 @@ function App() {
           <h3>⬇ Preview of your tweet ⬇</h3>
           <pre className="txt-output">{tweetMessage}</pre>
           <p>{tweetTag}</p>
-          <h4 className="limit-tweet">{tweetSize}/280</h4>
+          <h4 className={tweetSize<=280?"limit-tweet":"limit-exceed"}>{tweetSize}/280</h4>
         </div>      
         <br/>
         <span className="btn-tweet" onClick={sendTweet}>Tweet <img src="twitter.svg" alt="Tweet"/></span>
