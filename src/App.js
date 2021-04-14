@@ -67,6 +67,8 @@ function App() {
             <button className="btn-tag" type="button" onClick={tagHandler}>#webdev</button>
             <button className="btn-tag" type="button" onClick={tagHandler}>#JavaScript</button>
             <button className="btn-tag" type="button" onClick={tagHandler}>#ReactJS</button>
+            <button className="btn-tag" type="button" onClick={tagHandler}>#MERN</button>
+            <button className="btn-tag" type="button" onClick={tagHandler}>#FullStackDeveloper</button>
             <button className="btn-tag" type="button" onClick={tagHandler}>#codingisfun</button>
             <button className="btn-tag" type="button" onClick={tagHandler}>#100daysofcode</button>
             <button className="btn-tag" type="button" onClick={tagHandler}>#dailycoding</button>
